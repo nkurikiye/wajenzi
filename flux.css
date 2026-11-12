@@ -533,7 +533,7 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
   .fc-illus-grid{grid-template-columns:1fr;gap:22px}
 }
 
-/* For development partners section — photo caption + shared tweaks */
+/* Shared audience-section photo treatment + caption (companies / investors / partners / diaspora) */
 .fc-photo{filter:saturate(0.82) contrast(1.02) brightness(0.97)}
 .fc-intro-sub{margin-bottom:18px}
 .fc-photo-wrap{display:flex;flex-direction:column;gap:11px}
