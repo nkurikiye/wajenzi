@@ -539,3 +539,17 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
 .fc-photo-wrap{display:flex;flex-direction:column;gap:11px}
 .fc-photo-wrap .fc-photo{width:100%}
 .fc-cap{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted)}
+
+.article-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--card-radius) + 2px);
+  border: 1px solid var(--panel-bd);
+}
+.article-photo figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.article-photo figcaption a { text-decoration: underline; }
