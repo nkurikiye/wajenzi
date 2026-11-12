@@ -9,8 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../flux.css" />
+<link rel="stylesheet" href="../audiences.css" />
 </head>
-<body>
+<body class="audiences-page">
 
 <!-- NAV -->
 <header class="nav">
@@ -39,6 +40,12 @@
     <div class="crumb"><a href="index.html">Wajenzi</a><span class="sep">/</span> Nos publics</div>
     <h1>Une plateforme, <span class="grad-text">deux côtés</span> du marché.</h1>
     <p class="lead">Que vous bâtissiez une entreprise ou déployiez du capital, Wajenzi est l'intermédiaire de confiance entre la croissance de l'Afrique et les investisseurs du monde — avec des partenaires de développement qui aident à mobiliser le capital privé.</p>
+    <nav class="audience-jump" aria-label="Accéder à une section">
+      <a href="#issuers">Entreprises</a>
+      <a href="#investors">Investisseurs</a>
+      <a href="#partners">Partenaires de développement</a>
+      <a href="#diaspora">Diaspora</a>
+    </nav>
   </div>
 </section>
 
@@ -48,94 +55,90 @@
 
     <div class="fc-section" id="issuers">
 
-      <!-- INTRO + PHOTO -->
+      <!-- AUDIENCE INTRO -->
       <div class="fc-intro reveal">
         <div class="fc-intro-text">
           <div class="tagn">[ 01 ]</div>
-          <h3>Pour les entreprises</h3>
+          <h2>Pour les entreprises</h2>
           <div class="fc-range">Entreprises africaines en croissance levant <span class="grad-text">1–10 M€</span></div>
           <p class="blurb">Pour les entreprises africaines en croissance envisageant une levée de 1 à 10 millions d'euros, Wajenzi aide à organiser l'information d'investissement, à évaluer les voies de financement et à se préparer aux échanges avec des investisseurs potentiels.</p>
-        </div>
-        <div class="fc-photo photo" style="--img:url('img/company-in-operation.jpg')" role="img" aria-label="Une équipe de transformation alimentaire inspectant des produits emballés sur la ligne"></div>
-      </div>
+          <div class="fc-cta"><a href="apply-company.html" class="btn btn-glow">Discutez de vos besoins en capital</a></div>
 
-      <!-- DIAGRAMME DE MATURITÉ -->
-      <div class="fc-ready reveal">
-        <div class="fc-ready-head">Préparer une levée de capitaux</div>
-        <div class="fc-steps">
-          <div class="fc-step">
-            <span class="fc-node"></span>
-            <h4>Organiser l'information de l'entreprise</h4>
-            <p>Rassemblez vos états financiers, votre plan d'affaires et vos documents de gouvernance.</p>
-          </div>
-          <div class="fc-step">
-            <span class="fc-node"></span>
-            <h4>Évaluer les options de financement</h4>
-            <p>Explorez si la dette, les obligations ou un véhicule mutualisé pourraient convenir.</p>
-          </div>
-          <div class="fc-step">
-            <span class="fc-node"></span>
-            <h4>Préparer les échanges avec les investisseurs</h4>
-            <p>Anticipez les questions de due diligence et clarifiez l'emploi des fonds.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARTE DE LEVÉE ILLUSTRATIVE -->
-      <div class="fc-illus reveal">
-        <div class="ex-banner"><span class="dot-ex"></span> Illustratif — pas une transaction réelle</div>
-        <div class="fc-illus-grid">
-          <div class="fc-illus-head">
-            <h4>Un transformateur alimentaire cherchant 3 M€</h4>
-            <p>Une PME agro-transformatrice rentable levant des capitaux de croissance pour accroître sa capacité.</p>
-          </div>
-          <div class="fc-illus-col">
-            <div class="fc-illus-label">Emploi des fonds</div>
-            <ul>
-              <li>Une nouvelle ligne de transformation et du stockage frigorifique</li>
-              <li>Du fonds de roulement pour des commandes d'export plus importantes</li>
-            </ul>
-          </div>
-          <div class="fc-illus-col">
-            <div class="fc-illus-label">Ce que Wajenzi examinerait</div>
-            <ul>
-              <li>États financiers audités et carnet de commandes</li>
-              <li>Gouvernance et profondeur du management</li>
-              <li>Contrats d'enlèvement et marges</li>
-            </ul>
-          </div>
-          <div class="fc-illus-col">
-            <div class="fc-illus-label">Une voie qu'il pourrait évaluer</div>
-            <ul>
-              <li>Une obligation senior garantie, cotée sur l'Euro MTF, avec un ancrage de finance de développement</li>
-            </ul>
+          <div class="fc-ready reveal">
+            <div class="fc-ready-head">Préparer une levée de capitaux</div>
+            <div class="fc-steps">
+              <div class="fc-step">
+                <span class="fc-node"></span>
+                <h4>Organiser l'information de l'entreprise</h4>
+                <p>Rassemblez vos états financiers, votre plan d'affaires et vos documents de gouvernance.</p>
+              </div>
+              <div class="fc-step">
+                <span class="fc-node"></span>
+                <h4>Évaluer les options de financement</h4>
+                <p>Explorez si la dette, les obligations ou un véhicule mutualisé pourraient convenir.</p>
+              </div>
+              <div class="fc-step">
+                <span class="fc-node"></span>
+                <h4>Préparer les échanges avec les investisseurs</h4>
+                <p>Anticipez les questions de due diligence et clarifiez l'emploi des fonds.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <p class="fc-illus-note">Illustratif uniquement — chiffres hypothétiques présentés pour expliquer la structuration d'une levée, ni une offre ni une transaction réelle.</p>
-        <a class="read-link" href="example.html">Voir la levée illustrative complète <span class="ar">&rarr;</span></a>
-      </div>
-
-      <!-- CTA -->
-      <div class="fc-cta reveal">
-        <a href="apply-company.html" class="btn btn-glow">Discutez de vos besoins en capital</a>
+        <div class="fc-illus reveal">
+          <div class="ex-banner"><span class="dot-ex"></span> Illustratif — pas une transaction réelle</div>
+          <div class="fc-illus-grid">
+            <div class="fc-illus-head">
+              <h3><span class="audience-amount">3 M€</span>Une entreprise agroalimentaire en expansion</h3>
+              <p>Une PME agro-transformatrice rentable levant des capitaux de croissance pour accroître sa capacité.</p>
+            </div>
+            <div class="fc-illus-col">
+              <div class="fc-illus-label">Emploi des fonds</div>
+              <ul>
+                <li>Une nouvelle ligne de transformation et du stockage frigorifique</li>
+                <li>Du fonds de roulement pour des commandes d'export plus importantes</li>
+              </ul>
+            </div>
+            <div class="fc-illus-col">
+              <div class="fc-illus-label">Ce que Wajenzi examinerait</div>
+              <ul>
+                <li>États financiers audités et carnet de commandes</li>
+                <li>Gouvernance et profondeur du management</li>
+                <li>Contrats d'enlèvement et marges</li>
+              </ul>
+            </div>
+            <div class="fc-illus-col">
+              <div class="fc-illus-label">Une voie qu'il pourrait évaluer</div>
+              <ul>
+                <li>Une obligation senior garantie, cotée sur l'Euro MTF, avec un ancrage de finance de développement</li>
+              </ul>
+            </div>
+          </div>
+          <p class="fc-illus-note">Illustratif uniquement — chiffres hypothétiques présentés pour expliquer la structuration d'une levée, ni une offre ni une transaction réelle.</p>
+          <a class="read-link" href="example.html">Voir la levée illustrative complète <span class="ar">&rarr;</span></a>
+        </div>
       </div>
 
     </div>
 
     <div class="fc-section" id="investors">
 
-      <!-- INTRO + PHOTO -->
+      <!-- AUDIENCE INTRO -->
       <div class="fc-intro reveal">
         <div class="fc-intro-text">
           <div class="tagn">[ 02 ]</div>
-          <h3>Pour les investisseurs</h3>
+          <h2>Pour les investisseurs</h2>
           <div class="sub fc-intro-sub">Institutions · family offices · diaspora</div>
           <p class="blurb">Partagez vos critères d'investissement — secteurs, marchés, tailles de ticket et priorités d'impact. Wajenzi s'appuie sur ces critères pour aider à identifier des opportunités de croissance africaines pertinentes à examiner.</p>
+          <div class="fc-cta"><a href="apply-investor.html" class="btn btn-glow">Faire part de votre intérêt</a></div>
         </div>
-        <div class="fc-photo photo" style="--img:url('img/investment-review.jpg')" role="img" aria-label="Deux professionnels de l'investissement examinant le dossier d'une entreprise africaine à une table"></div>
+        <div class="audience-criteria">
+          <div class="fc-photo photo" style="--img:url('img/investment-review.jpg')" role="img" aria-label="Deux professionnels de l'investissement examinant le dossier d'une entreprise africaine à une table"></div>
+          <h3>Vos critères d’investissement</h3>
+          <ul><li>Secteurs</li><li>Marchés</li><li>Montants investis</li><li>Priorités d’impact</li></ul>
+        </div>
       </div>
 
-      <!-- DIAGRAMME CRITÈRES → OPPORTUNITÉS -->
       <div class="fc-ready reveal">
         <div class="fc-ready-head">Comment nous identifions des opportunités pour vous</div>
         <div class="fc-steps">
@@ -157,11 +160,6 @@
         </div>
       </div>
 
-      <!-- CTA -->
-      <div class="fc-cta reveal">
-        <a href="apply-investor.html" class="btn btn-glow">Faire part de votre intérêt</a>
-      </div>
-
     </div>
 
     <div class="fc-section" id="partners">
@@ -170,7 +168,7 @@
       <div class="fc-intro reveal">
         <div class="fc-intro-text">
           <div class="tagn">[ 03 ]</div>
-          <h3>Pour les partenaires de développement</h3>
+          <h2>Pour les partenaires de développement</h2>
           <div class="sub fc-intro-sub">IFD · fonds à impact · fondations</div>
           <p class="blurb">Des capitaux à mandat qui peuvent ancrer les offres et débloquer des pools bien plus larges d'investissement privé.</p>
         </div>
@@ -210,7 +208,7 @@
       <div class="fc-intro reveal">
         <div class="fc-intro-text">
           <div class="tagn">[ 04 ]</div>
-          <h3>Pour la diaspora</h3>
+          <h2>Pour la diaspora</h2>
           <div class="sub fc-intro-sub">Africains d'Europe · investir au pays</div>
           <p class="blurb">La diaspora africaine envoie chaque année plus de 100 Mds $ au pays — et presque rien ne devient de l'investissement structuré. Nous changeons cela.</p>
           <a class="read-link" href="how-diaspora-capital-is-structured.html">Lire : comment le capital de la diaspora est structuré <span class="ar">&rarr;</span></a>
@@ -243,21 +241,20 @@
         </div>
       </div>
 
-    </div>
-
-    <!-- MALAIKA SUB-BRAND -->
-    <div class="malaika reveal" id="malaika">
-      <div class="mal-head">
-        <span class="mal-badge">&#9679; Malaika</span>
-        <h3>Le réseau d'investisseurs providentiels de la diaspora.</h3>
-        <p>« Malaika » signifie <em>ange</em>. C'est notre réseau de business angels de la diaspora africaine — investissant ensemble dans les entreprises que nous amenons au marché, et soutenant les fondateurs par le jugement et le mentorat, pas seulement le capital.</p>
+      <!-- MALAIKA SUB-BRAND -->
+      <div class="malaika reveal" id="malaika">
+        <div class="mal-head">
+          <span class="mal-badge">&#9679; Malaika</span>
+          <h3>Le réseau d'investisseurs providentiels de la diaspora.</h3>
+          <p>« Malaika » signifie <em>ange</em>. C'est notre réseau de business angels de la diaspora africaine — investissant ensemble dans les entreprises que nous amenons au marché, et soutenant les fondateurs par le jugement et le mentorat, pas seulement le capital.</p>
+        </div>
+        <div class="mal-pillars">
+          <div class="mal-p"><div class="mn">Réseau</div><p>Une communauté d'anges de la diaspora qui partagent deal flow, due diligence et conviction.</p></div>
+          <div class="mal-p"><div class="mn">Investir ensemble</div><p>Soutenir une opportunité seul, ou se regrouper en syndicat — en évaluant les dossiers collectivement.</p></div>
+          <div class="mal-p"><div class="mn">Mentorer</div><p>Apporter aux fondateurs expérience, réseaux et conseils, de la part de personnes qui ont déjà bâti.</p></div>
+        </div>
+        <a class="read-link" href="malaika.html">Découvrir Malaika <span class="ar">&rarr;</span></a>
       </div>
-      <div class="mal-pillars">
-        <div class="mal-p"><div class="mn">Réseau</div><p>Une communauté d'anges de la diaspora qui partagent deal flow, due diligence et conviction.</p></div>
-        <div class="mal-p"><div class="mn">Investir ensemble</div><p>Soutenir une opportunité seul, ou se regrouper en syndicat — en évaluant les dossiers collectivement.</p></div>
-        <div class="mal-p"><div class="mn">Mentorer</div><p>Apporter aux fondateurs expérience, réseaux et conseils, de la part de personnes qui ont déjà bâti.</p></div>
-      </div>
-      <a class="read-link" href="malaika.html">Découvrir Malaika <span class="ar">&rarr;</span></a>
     </div>
 
   </div>
