@@ -435,3 +435,8 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
   .photo-band .photo-bg::before{background:linear-gradient(0deg,rgba(10,17,36,0.93),rgba(10,17,36,0.58));}
   .member .ph{aspect-ratio:4/3;}
 }
+
+/* Inline 'read the explainer' link (used on audience rows) */
+.read-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;text-transform:uppercase;color:var(--magenta-2);font-weight:700;}
+.read-link .ar{transition:transform .2s;}
+.read-link:hover .ar{transform:translateX(4px);}
