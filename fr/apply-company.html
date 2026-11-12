@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Parlez-nous de votre levée de fonds | Wajenzi</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 278 278'%3E%3Cg fill='%23E2276F'%3E%3Cpath d='M139.06,129.3,151.37,117a74,74,0,0,0,0-104.68L139.06,0,126.75,12.31a74,74,0,0,0,0,104.68Z'/%3E%3Cpath d='M139.06,278.12l12.31-12.31a74,74,0,0,0,0-104.68l-12.31-12.31-12.31,12.31a74,74,0,0,0,0,104.68Z'/%3E%3Cpath d='M148.82,139.06l12.31,12.31a74,74,0,0,0,104.68,0l12.31-12.31-12.31-12.31a74,74,0,0,0-104.68,0Z'/%3E%3Cpath d='M0,139.06l12.31,12.31a74,74,0,0,0,104.68,0l12.31-12.31L117,126.75a74,74,0,0,0-104.68,0Z'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../flux.css" />
+<link rel="stylesheet" href="../intake.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" aria-label="Accueil Wajenzi"><img class="logo-svg" src="../logo.svg" alt="Wajenzi" /></a>
+    <nav class="nav-links">
+      <a href="model.html">Comment ça marche</a>
+      <a href="process.html">Le parcours</a>
+      <a href="audiences.html" class="active">Nos publics</a>
+      <a href="insights.html">Perspectives</a>
+      <a href="about.html">À propos</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../apply-company.html" class="lang">EN</a>
+      <a href="about.html#contact" class="btn btn-glow">Prendre rendez-vous</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="wrap intake">
+  <h1>Parlez-nous de votre levée de fonds</h1>
+  <p>Vous dirigez une entreprise africaine en croissance et cherchez à lever entre 1 et 10 M€ ? Décrivez votre projet. Nous examinerons votre demande avant de vous proposer un échange.</p>
+  <form method="post" data-intake="company" data-success="Merci. Nous avons bien reçu votre demande." data-failure="Votre demande n’a pas pu être envoyée. Vos réponses sont conservées sur cette page. Réessayez." aria-describedby="intake-privacy">
+    <input type="hidden" name="enquiry_type" value="company">
+    <input type="hidden" name="language" value="fr">
+    <div class="intake-grid">
+      <div class="intake-field"><label for="name">Votre nom</label><input id="name" name="name" required type="text" maxlength="120" autocomplete="name"></div>
+      <div class="intake-field"><label for="email">E-mail professionnel</label><input id="email" name="email" required type="email" maxlength="254" autocomplete="email"></div>
+      <div class="intake-field"><label for="company">Nom de l’entreprise</label><input id="company" name="company" required type="text" maxlength="120" autocomplete="organization"></div>
+      <div class="intake-field"><label for="country">Principal pays d’activité</label><input id="country" name="country" required type="text" maxlength="120"></div>
+      <div class="intake-field"><label for="amount">Montant recherché</label><select id="amount" name="amount" required><option value="">Sélectionnez</option><option value="under-1m">Moins de 1 M€</option><option value="1m-to-under-3m">1 à moins de 3 M€</option><option value="3m-to-under-5m">3 à moins de 5 M€</option><option value="5m-to-10m">5 à 10 M€</option><option value="over-10m">Plus de 10 M€</option><option value="undecided">À déterminer</option></select></div>
+      <div class="intake-field"><label for="revenue">Chiffre d’affaires du dernier exercice (facultatif)</label><select id="revenue" name="revenue"><option value="">Sélectionnez</option><option value="pre-revenue">Pas encore de chiffre d’affaires</option><option value="under-1m">Moins de 1 M€</option><option value="1m-to-under-5m">1 à moins de 5 M€</option><option value="5m-to-under-10m">5 à moins de 10 M€</option><option value="10m-plus">10 M€ ou plus</option><option value="discuss">À discuter ensemble</option></select></div>
+      <div class="intake-field intake-wide"><label for="purpose">Quelle est votre activité et à quoi serviront les fonds ?</label><textarea id="purpose" name="purpose" required rows="3" maxlength="600"></textarea></div>
+    </div>
+    <p id="intake-privacy">Nous utiliserons vos réponses pour examiner votre demande et vous recontacter. Évitez les informations confidentielles.</p>
+    <button type="submit" class="btn btn-glow" disabled>Envoyer ma demande</button>
+    <p role="status" class="intake-status">L’envoi en ligne est en cours de configuration.</p>
+  </form>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img class="logo-svg" src="../logo.svg" alt="Wajenzi" style="height:28px" />
+        <p class="foot-about">Société de conseil en finance d'entreprise fondée par des Africains, dont le siège est au Luxembourg, reliant les PME du continent aux capitaux mondiaux via des véhicules de confiance domiciliés dans l'UE.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul><li><a href="model.html">Comment ça marche</a></li><li><a href="process.html">Le parcours</a></li><li><a href="audiences.html">Nos publics</a></li><li><a href="insights.html">Perspectives</a></li><li><a href="about.html">À propos</a></li><li><a href="example.html">Levée illustrative</a></li></ul>
+      </div>
+      <div>
+        <h5>Publics</h5>
+        <ul><li><a href="audiences.html#issuers">Émetteurs</a></li><li><a href="audiences.html#investors">Investisseurs</a></li><li><a href="audiences.html#partners">Partenaires de développement</a></li><li><a href="audiences.html#diaspora">Diaspora</a></li><li><a href="malaika.html">Malaika</a></li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul><li><a href="mailto:info@wajenzi.fund">info@wajenzi.fund</a></li><li>LHoFT · 9 rue du Laboratoire</li><li>L-1911 Luxembourg</li></ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p><strong>Important :</strong> Wajenzi fournit des services de conseil et d'arrangement en finance d'entreprise. Wajenzi n'est pas une entreprise d'investissement agréée ; le placement et la distribution de titres sont réalisés en partenariat avec des intermédiaires dûment agréés.</p>
+      <p>Rien sur ce site ne constitue un conseil en investissement, juridique, fiscal ou financier, ni une offre ou une sollicitation d'achat ou de vente de titres. L'investissement dans des titres privés et de marchés frontières comporte des risques importants, y compris la perte éventuelle du capital, l'illiquidité et le risque de change. Les investisseurs potentiels doivent solliciter un avis professionnel indépendant.</p>
+      <p>© 2026 Wajenzi. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../flux.js"></script>
+<script src="../intake.js"></script>
+</body>
+</html>
