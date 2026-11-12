@@ -440,3 +440,25 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
 .read-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;text-transform:uppercase;color:var(--magenta-2);font-weight:700;}
 .read-link .ar{transition:transform .2s;}
 .read-link:hover .ar{transform:translateX(4px);}
+
+/* ========================================================
+   ILLUSTRATIVE RAISE (example.html)
+   ======================================================== */
+.ex-banner{display:inline-flex;align-items:center;gap:9px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--magenta-2);font-weight:700;border:1px solid rgba(226,39,111,0.4);background:rgba(226,39,111,0.08);padding:7px 15px;border-radius:30px;margin-bottom:22px;}
+.ex-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:22px;align-items:start;margin-top:4px;}
+.ex-card{background:var(--panel);border:1px solid var(--panel-bd);border-radius:var(--card-radius);padding:34px 32px;backdrop-filter:blur(10px);}
+.ex-card h3{font-size:23px;font-weight:600;}
+.ex-card .ex-tag{font-family:'Space Mono',monospace;font-size:12px;color:var(--magenta-2);letter-spacing:0.05em;text-transform:uppercase;margin:4px 0 22px;}
+.ex-fact{display:flex;justify-content:space-between;gap:18px;padding:12px 0;border-top:1px solid rgba(255,255,255,0.07);font-size:14.5px;}
+.ex-fact:first-of-type{border-top:none;}
+.ex-fact span{color:var(--muted);flex:0 0 auto;}
+.ex-fact strong{color:#fff;font-weight:600;text-align:right;}
+.ex-row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px 0;border-top:1px solid rgba(255,255,255,0.07);font-size:14.5px;}
+.ex-row:first-of-type{border-top:none;}
+.ex-row .k{color:var(--muted);}
+.ex-row .v{color:var(--text);font-weight:500;}
+.ex-flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px;}
+.ex-chip{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:var(--text);background:var(--panel);border:1px solid var(--panel-bd);padding:11px 14px;border-radius:10px;}
+.ex-chip .ar{color:var(--magenta-2);margin-left:10px;}
+.ex-note{font-size:12.5px;color:var(--muted);line-height:1.75;border-left:3px solid rgba(226,39,111,0.5);padding-left:16px;margin-top:30px;max-width:840px;}
+@media(max-width:860px){.ex-grid{grid-template-columns:1fr;}.ex-row{grid-template-columns:118px 1fr;}}
