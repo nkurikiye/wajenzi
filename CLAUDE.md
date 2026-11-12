@@ -14,8 +14,13 @@ AI to organise information and support investor discovery.
 
 - Top-level `*.html` — English pages (`index`, `model`, `process`, `audiences`,
   `insights`, `about`, plus `example`, `malaika`, and article pages).
-- `fr/` — full French mirror of the site. FR pages reference assets with `../`
-  (e.g. `../flux.css`, `../logo.svg`, `../img/...`).
+- `fr/` — full French mirror of the site. FR pages reference assets in HTML
+  attributes with `../` (e.g. `../flux.css`, `../logo.svg`, `src="../img/..."`).
+  **Exception:** the `.photo` slots' `--img:url(...)` is a custom property consumed by
+  `flux.css`, so its `url()` resolves relative to `flux.css` (the site root), not the
+  page. Use a root-relative path there (`--img:url('img/foo.jpg')`) on **every** page,
+  EN and FR alike — a `../img/...` value resolves above the root and silently falls back
+  to the gradient.
 - Every page has an EN⇄FR toggle in the nav: a `.lang` link pointing to its counterpart
   (EN `index.html` → `fr/index.html`, and back via `../index.html`).
 - `img/` — photos and exported graphics. See `img/README.md` for the expected files and
