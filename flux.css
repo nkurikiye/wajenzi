@@ -462,3 +462,16 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
 .ex-chip .ar{color:var(--magenta-2);margin-left:10px;}
 .ex-note{font-size:12.5px;color:var(--muted);line-height:1.75;border-left:3px solid rgba(226,39,111,0.5);padding-left:16px;margin-top:30px;max-width:840px;}
 @media(max-width:860px){.ex-grid{grid-template-columns:1fr;}.ex-row{grid-template-columns:118px 1fr;}}
+
+/* Malaika — diaspora angel network sub-brand (on the diaspora section) */
+.malaika{margin-top:30px;background:linear-gradient(155deg,rgba(226,39,111,0.14),rgba(255,255,255,0.03));border:1px solid rgba(226,39,111,0.28);border-radius:calc(var(--card-radius) + 4px);padding:40px 42px;backdrop-filter:blur(10px);}
+.mal-badge{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--magenta-2);font-weight:700;}
+.malaika h3{font-size:clamp(26px,3vw,36px);font-weight:600;letter-spacing:-0.02em;margin:12px 0 12px;}
+.mal-head p{font-size:16px;color:var(--muted);max-width:660px;}
+.mal-head em{color:var(--pink-soft);font-style:italic;}
+.mal-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0 10px;}
+.mal-p{border-top:1px solid rgba(255,255,255,0.12);padding-top:16px;}
+.mal-p .mn{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#fff;font-weight:700;margin-bottom:8px;}
+.mal-p p{font-size:14px;color:var(--muted);line-height:1.6;}
+.malaika .read-link{margin-top:22px;}
+@media(max-width:800px){.malaika{padding:30px 26px;}.mal-pillars{grid-template-columns:1fr;gap:14px;}}
