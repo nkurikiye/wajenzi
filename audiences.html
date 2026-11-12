@@ -9,8 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="flux.css" />
+<link rel="stylesheet" href="audiences.css" />
 </head>
-<body>
+<body class="audiences-page">
 
 <!-- NAV -->
 <header class="nav">
@@ -40,6 +41,12 @@
     <div class="crumb"><a href="index.html">Wajenzi</a><span class="sep">/</span> Who we serve</div>
     <h1>One platform, <span class="grad-text">two sides</span> of the market.</h1>
     <p class="lead">Whether you are building a company or deploying capital, Wajenzi is the trusted intermediary between Africa's growth and the world's investors — with development partners helping crowd in private capital.</p>
+    <nav class="audience-jump" aria-label="Jump to an audience">
+      <a href="#issuers">Companies</a>
+      <a href="#investors">Investors</a>
+      <a href="#partners">Development partners</a>
+      <a href="#diaspora">Diaspora</a>
+    </nav>
   </div>
 </section>
 
@@ -49,94 +56,90 @@
 
     <div class="fc-section" id="issuers">
 
-      <!-- INTRO + PHOTO -->
+      <!-- AUDIENCE INTRO -->
       <div class="fc-intro reveal">
         <div class="fc-intro-text">
           <div class="tagn">[ 01 ]</div>
-          <h3>For companies</h3>
+          <h2>For companies</h2>
           <div class="fc-range">African growth companies raising <span class="grad-text">€1–10M</span></div>
           <p class="blurb">For growth-stage African companies exploring a raise of €1–10 million, Wajenzi helps organise investment information, assess financing routes and prepare for conversations with potential investors.</p>
-        </div>
-        <div class="fc-photo photo" style="--img:url('img/company-in-operation.jpg')" role="img" aria-label="A food-processing team inspecting packaged products on the line"></div>
-      </div>
+          <div class="fc-cta"><a href="apply-company.html" class="btn btn-glow">Discuss your capital needs</a></div>
 
-      <!-- CAPITAL-READINESS DIAGRAM -->
-      <div class="fc-ready reveal">
-        <div class="fc-ready-head">Preparing to raise capital</div>
-        <div class="fc-steps">
-          <div class="fc-step">
-            <span class="fc-node"></span>
-            <h4>Organise company information</h4>
-            <p>Bring together your financials, business plan and governance records.</p>
-          </div>
-          <div class="fc-step">
-            <span class="fc-node"></span>
-            <h4>Assess financing options</h4>
-            <p>Explore whether debt, bonds or a pooled vehicle could fit.</p>
-          </div>
-          <div class="fc-step">
-            <span class="fc-node"></span>
-            <h4>Prepare for investor conversations</h4>
-            <p>Anticipate diligence questions and clarify your use of funds.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ILLUSTRATIVE RAISE CARD -->
-      <div class="fc-illus reveal">
-        <div class="ex-banner"><span class="dot-ex"></span> Illustrative — not a real transaction</div>
-        <div class="fc-illus-grid">
-          <div class="fc-illus-head">
-            <h4>A food processor seeking €3M</h4>
-            <p>A profitable agri-processing SME raising growth capital to expand capacity.</p>
-          </div>
-          <div class="fc-illus-col">
-            <div class="fc-illus-label">Use of funds</div>
-            <ul>
-              <li>A new processing line and cold storage</li>
-              <li>Working capital for larger export orders</li>
-            </ul>
-          </div>
-          <div class="fc-illus-col">
-            <div class="fc-illus-label">What Wajenzi would review</div>
-            <ul>
-              <li>Audited financials and order book</li>
-              <li>Governance and management depth</li>
-              <li>Offtake contracts and margins</li>
-            </ul>
-          </div>
-          <div class="fc-illus-col">
-            <div class="fc-illus-label">One route it could assess</div>
-            <ul>
-              <li>A senior secured bond, listed on the Euro MTF, with a development-finance anchor</li>
-            </ul>
+          <div class="fc-ready reveal">
+            <div class="fc-ready-head">Preparing to raise capital</div>
+            <div class="fc-steps">
+              <div class="fc-step">
+                <span class="fc-node"></span>
+                <h4>Organise company information</h4>
+                <p>Bring together your financials, business plan and governance records.</p>
+              </div>
+              <div class="fc-step">
+                <span class="fc-node"></span>
+                <h4>Assess financing options</h4>
+                <p>Explore whether debt, bonds or a pooled vehicle could fit.</p>
+              </div>
+              <div class="fc-step">
+                <span class="fc-node"></span>
+                <h4>Prepare for investor conversations</h4>
+                <p>Anticipate diligence questions and clarify your use of funds.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <p class="fc-illus-note">Illustrative only — hypothetical figures shown to explain how a raise is structured, not an offer or a real transaction.</p>
-        <a class="read-link" href="example.html">See the full illustrative raise <span class="ar">&rarr;</span></a>
-      </div>
-
-      <!-- CTA -->
-      <div class="fc-cta reveal">
-        <a href="apply-company.html" class="btn btn-glow">Discuss your capital needs</a>
+        <div class="fc-illus reveal">
+          <div class="ex-banner"><span class="dot-ex"></span> Illustrative — not a real transaction</div>
+          <div class="fc-illus-grid">
+            <div class="fc-illus-head">
+              <h3><span class="audience-amount">€3M</span>A food processor expanding capacity</h3>
+              <p>A profitable agri-processing SME raising growth capital to expand capacity.</p>
+            </div>
+            <div class="fc-illus-col">
+              <div class="fc-illus-label">Use of funds</div>
+              <ul>
+                <li>A new processing line and cold storage</li>
+                <li>Working capital for larger export orders</li>
+              </ul>
+            </div>
+            <div class="fc-illus-col">
+              <div class="fc-illus-label">What Wajenzi would review</div>
+              <ul>
+                <li>Audited financials and order book</li>
+                <li>Governance and management depth</li>
+                <li>Offtake contracts and margins</li>
+              </ul>
+            </div>
+            <div class="fc-illus-col">
+              <div class="fc-illus-label">One route it could assess</div>
+              <ul>
+                <li>A senior secured bond, listed on the Euro MTF, with a development-finance anchor</li>
+              </ul>
+            </div>
+          </div>
+          <p class="fc-illus-note">Illustrative only — hypothetical figures shown to explain how a raise is structured, not an offer or a real transaction.</p>
+          <a class="read-link" href="example.html">See the full illustrative raise <span class="ar">&rarr;</span></a>
+        </div>
       </div>
 
     </div>
 
     <div class="fc-section" id="investors">
 
-      <!-- INTRO + PHOTO -->
+      <!-- AUDIENCE INTRO -->
       <div class="fc-intro reveal">
         <div class="fc-intro-text">
           <div class="tagn">[ 02 ]</div>
-          <h3>For investors</h3>
+          <h2>For investors</h2>
           <div class="sub fc-intro-sub">Institutions · family offices · diaspora</div>
           <p class="blurb">Share your investment criteria — sectors, markets, ticket sizes and impact priorities. Wajenzi uses those criteria to help identify relevant African growth opportunities for further review.</p>
+          <div class="fc-cta"><a href="apply-investor.html" class="btn btn-glow">Register investor interest</a></div>
         </div>
-        <div class="fc-photo photo" style="--img:url('img/investment-review.jpg')" role="img" aria-label="Two investment professionals reviewing an African company's investment brief at a table"></div>
+        <div class="audience-criteria">
+          <div class="fc-photo photo" style="--img:url('img/investment-review.jpg')" role="img" aria-label="Two investment professionals reviewing an African company's investment brief at a table"></div>
+          <h3>Your investment criteria</h3>
+          <ul><li>Sectors</li><li>Markets</li><li>Ticket size</li><li>Impact priorities</li></ul>
+        </div>
       </div>
 
-      <!-- CRITERIA-TO-OPPORTUNITY DIAGRAM -->
       <div class="fc-ready reveal">
         <div class="fc-ready-head">How we identify opportunities for you</div>
         <div class="fc-steps">
@@ -158,11 +161,6 @@
         </div>
       </div>
 
-      <!-- CTA -->
-      <div class="fc-cta reveal">
-        <a href="apply-investor.html" class="btn btn-glow">Register investor interest</a>
-      </div>
-
     </div>
 
     <div class="fc-section" id="partners">
@@ -171,7 +169,7 @@
       <div class="fc-intro reveal">
         <div class="fc-intro-text">
           <div class="tagn">[ 03 ]</div>
-          <h3>For development partners</h3>
+          <h2>For development partners</h2>
           <div class="sub fc-intro-sub">DFIs · impact funds · foundations</div>
           <p class="blurb">Mandate-driven capital that can anchor offerings and unlock far larger pools of private investment.</p>
         </div>
@@ -211,7 +209,7 @@
       <div class="fc-intro reveal">
         <div class="fc-intro-text">
           <div class="tagn">[ 04 ]</div>
-          <h3>For the diaspora</h3>
+          <h2>For the diaspora</h2>
           <div class="sub fc-intro-sub">Africans in Europe · investing back home</div>
           <p class="blurb">The African diaspora sends $100B+ home every year — and almost none becomes structured investment. We change that.</p>
           <a class="read-link" href="how-diaspora-capital-is-structured.html">Read: how diaspora capital is structured <span class="ar">&rarr;</span></a>
@@ -244,21 +242,20 @@
         </div>
       </div>
 
-    </div>
-
-    <!-- MALAIKA SUB-BRAND -->
-    <div class="malaika reveal" id="malaika">
-      <div class="mal-head">
-        <span class="mal-badge">&#9679; Malaika</span>
-        <h3>The diaspora angel network.</h3>
-        <p>&ldquo;Malaika&rdquo; means <em>angel</em>. It&rsquo;s our network of African diaspora business angels &mdash; investing together in the companies we bring to market, and backing founders with judgement and mentorship, not just capital.</p>
+      <!-- MALAIKA SUB-BRAND -->
+      <div class="malaika reveal" id="malaika">
+        <div class="mal-head">
+          <span class="mal-badge">&#9679; Malaika</span>
+          <h3>The diaspora angel network.</h3>
+          <p>&ldquo;Malaika&rdquo; means <em>angel</em>. It&rsquo;s our network of African diaspora business angels &mdash; investing together in the companies we bring to market, and backing founders with judgement and mentorship, not just capital.</p>
+        </div>
+        <div class="mal-pillars">
+          <div class="mal-p"><div class="mn">Share deal flow</div><p>A community of diaspora angels who share deal flow, diligence and conviction.</p></div>
+          <div class="mal-p"><div class="mn">Invest together</div><p>Back opportunities individually, or pool into a syndicate &mdash; screening and reviewing deals as a group.</p></div>
+          <div class="mal-p"><div class="mn">Mentor founders</div><p>Give founders experience, networks and guidance from people who have built before.</p></div>
+        </div>
+        <a class="read-link" href="malaika.html">Explore Malaika <span class="ar">&rarr;</span></a>
       </div>
-      <div class="mal-pillars">
-        <div class="mal-p"><div class="mn">Network</div><p>A community of diaspora angels who share deal flow, diligence and conviction.</p></div>
-        <div class="mal-p"><div class="mn">Invest together</div><p>Back opportunities individually, or pool into a syndicate &mdash; screening and reviewing deals as a group.</p></div>
-        <div class="mal-p"><div class="mn">Mentor</div><p>Give founders experience, networks and guidance from people who have built before.</p></div>
-      </div>
-      <a class="read-link" href="malaika.html">Explore Malaika <span class="ar">&rarr;</span></a>
     </div>
 
   </div>
