@@ -35,7 +35,7 @@
 
 <main class="wrap intake">
   <h1>Tell us about your capital raise</h1>
-  <p>Tell us what your company does and what you’re raising for.</p>
+  <p>Raising €1–10 million for a growing African business? Tell us what you’re planning. We’ll review your enquiry before suggesting a call.</p>
   <form method="post" data-intake="company" data-success="Thanks. We’ve received your enquiry." data-failure="Your enquiry could not be sent. Your answers are still here. Please try again." aria-describedby="intake-privacy">
     <input type="hidden" name="enquiry_type" value="company">
     <input type="hidden" name="language" value="en">
@@ -44,10 +44,11 @@
       <div class="intake-field"><label for="email">Work email</label><input id="email" name="email" required type="email" maxlength="254" autocomplete="email"></div>
       <div class="intake-field"><label for="company">Company name</label><input id="company" name="company" required type="text" maxlength="120" autocomplete="organization"></div>
       <div class="intake-field"><label for="country">Main country of operation</label><input id="country" name="country" required type="text" maxlength="120"></div>
-      <div class="intake-field"><label for="amount">Amount you plan to raise</label><input id="amount" name="amount" required type="text" maxlength="120"></div>
+      <div class="intake-field"><label for="amount">Target raise</label><select id="amount" name="amount" required><option value="">Select one</option><option value="under-1m">Under €1m</option><option value="1m-to-under-3m">€1m to under €3m</option><option value="3m-to-under-5m">€3m to under €5m</option><option value="5m-to-10m">€5m to €10m</option><option value="over-10m">Over €10m</option><option value="undecided">Still estimating</option></select></div>
+      <div class="intake-field"><label for="revenue">Last financial year’s revenue (optional)</label><select id="revenue" name="revenue"><option value="">Select one</option><option value="pre-revenue">Pre-revenue</option><option value="under-1m">Under €1m</option><option value="1m-to-under-5m">€1m to under €5m</option><option value="5m-to-under-10m">€5m to under €10m</option><option value="10m-plus">€10m or more</option><option value="discuss">Prefer to discuss</option></select></div>
       <div class="intake-field intake-wide"><label for="purpose">What does your company do, and what will the funds support?</label><textarea id="purpose" name="purpose" required rows="3" maxlength="600"></textarea></div>
     </div>
-    <p id="intake-privacy">We’ll use your answers to review your enquiry and contact you about it.</p>
+    <p id="intake-privacy">We’ll use your answers to review your enquiry and follow up. Please leave out confidential details.</p>
     <button type="submit" class="btn btn-glow" disabled>Submit company enquiry</button>
     <p role="status" class="intake-status">Online submissions are being set up.</p>
   </form>

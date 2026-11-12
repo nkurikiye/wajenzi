@@ -35,16 +35,18 @@
 
 <main class="wrap intake">
   <h1>Register your investment interest</h1>
-  <p>Share what you look for so we can follow up about relevant opportunities.</p>
+  <p>Tell us what you look for in an African investment. We’ll review your criteria and may follow up when an opportunity fits.</p>
   <form method="post" data-intake="investor" data-success="Thanks. We’ve received your enquiry." data-failure="Your enquiry could not be sent. Your answers are still here. Please try again." aria-describedby="intake-privacy">
     <input type="hidden" name="enquiry_type" value="investor">
     <input type="hidden" name="language" value="en">
     <div class="intake-grid">
       <div class="intake-field"><label for="name">Your name</label><input id="name" name="name" required type="text" maxlength="120" autocomplete="name"></div>
       <div class="intake-field"><label for="email">Email address</label><input id="email" name="email" required type="email" maxlength="254" autocomplete="email"></div>
-      <div class="intake-field"><label for="investor_type">Investor type</label><select id="investor_type" name="investor_type" required><option value="">Select one</option><option>Institution</option><option>Family office</option><option>Individual / diaspora investor</option><option>Other</option></select></div>
-      <div class="intake-field"><label for="ticket_size">Typical investment size (optional)</label><input id="ticket_size" name="ticket_size" type="text" maxlength="120"></div>
-      <div class="intake-field intake-wide"><label for="criteria">Which sectors or markets interest you? Include any impact priorities.</label><textarea id="criteria" name="criteria" required rows="3" maxlength="600"></textarea></div>
+      <div class="intake-field"><label for="investor_type">Investor type</label><select id="investor_type" name="investor_type" required><option value="">Select one</option><option value="institution">Institutional investor</option><option value="fund">Investment fund</option><option value="family-office">Family office</option><option value="individual">Individual or diaspora investor</option><option value="other">Other</option></select></div>
+      <div class="intake-field"><label for="organisation">Organisation (optional)</label><input id="organisation" name="organisation" type="text" maxlength="120" autocomplete="organization"></div>
+      <div class="intake-field"><label for="ticket_size">Typical investment size (optional)</label><select id="ticket_size" name="ticket_size"><option value="">Select one</option><option value="under-25k">Under €25k</option><option value="25k-to-under-100k">€25k to under €100k</option><option value="100k-to-under-500k">€100k to under €500k</option><option value="500k-to-under-1m">€500k to under €1m</option><option value="1m-plus">€1m or more</option><option value="undecided">Still exploring</option></select></div>
+      <div class="intake-field"><label for="investment_type">Preferred investment type (optional)</label><select id="investment_type" name="investment_type"><option value="">Select one</option><option value="debt">Debt or bonds</option><option value="equity">Equity</option><option value="pooled">Fund or pooled vehicle</option><option value="open">Open to different structures</option></select></div>
+      <div class="intake-field intake-wide"><label for="criteria">Which sectors or markets interest you? Add any impact priorities, or say if you’re open to suggestions.</label><textarea id="criteria" name="criteria" required rows="3" maxlength="600"></textarea></div>
     </div>
     <p id="intake-privacy">We’ll use your answers to review your enquiry and contact you about it.</p>
     <button type="submit" class="btn btn-glow" disabled>Register interest</button>

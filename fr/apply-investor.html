@@ -34,16 +34,18 @@
 
 <main class="wrap intake">
   <h1>Manifestez votre intérêt</h1>
-  <p>Indiquez vos critères pour que nous puissions vous recontacter au sujet d’opportunités pertinentes.</p>
+  <p>Indiquez ce que vous recherchez. Nous examinerons vos critères et pourrons vous recontacter si une opportunité y correspond.</p>
   <form method="post" data-intake="investor" data-success="Merci. Nous avons bien reçu votre demande." data-failure="Votre demande n’a pas pu être envoyée. Vos réponses sont conservées sur cette page. Réessayez." aria-describedby="intake-privacy">
     <input type="hidden" name="enquiry_type" value="investor">
     <input type="hidden" name="language" value="fr">
     <div class="intake-grid">
       <div class="intake-field"><label for="name">Votre nom</label><input id="name" name="name" required type="text" maxlength="120" autocomplete="name"></div>
       <div class="intake-field"><label for="email">Adresse e-mail</label><input id="email" name="email" required type="email" maxlength="254" autocomplete="email"></div>
-      <div class="intake-field"><label for="investor_type">Profil investisseur</label><select id="investor_type" name="investor_type" required><option value="">Sélectionnez</option><option>Institution</option><option>Family office</option><option>Investisseur individuel / diaspora</option><option>Autre</option></select></div>
-      <div class="intake-field"><label for="ticket_size">Montant investi par opération (facultatif)</label><input id="ticket_size" name="ticket_size" type="text" maxlength="120"></div>
-      <div class="intake-field intake-wide"><label for="criteria">Quels secteurs ou marchés vous intéressent ? Indiquez vos priorités d’impact, le cas échéant.</label><textarea id="criteria" name="criteria" required rows="3" maxlength="600"></textarea></div>
+      <div class="intake-field"><label for="investor_type">Profil investisseur</label><select id="investor_type" name="investor_type" required><option value="">Sélectionnez</option><option value="institution">Investisseur institutionnel</option><option value="fund">Fonds d’investissement</option><option value="family-office">Family office</option><option value="individual">Investisseur individuel ou de la diaspora</option><option value="other">Autre</option></select></div>
+      <div class="intake-field"><label for="organisation">Organisation (facultatif)</label><input id="organisation" name="organisation" type="text" maxlength="120" autocomplete="organization"></div>
+      <div class="intake-field"><label for="ticket_size">Montant par investissement (facultatif)</label><select id="ticket_size" name="ticket_size"><option value="">Sélectionnez</option><option value="under-25k">Moins de 25 000 €</option><option value="25k-to-under-100k">25 000 à moins de 100 000 €</option><option value="100k-to-under-500k">100 000 à moins de 500 000 €</option><option value="500k-to-under-1m">500 000 à moins de 1 M€</option><option value="1m-plus">1 M€ ou plus</option><option value="undecided">À déterminer</option></select></div>
+      <div class="intake-field"><label for="investment_type">Type d’investissement recherché (facultatif)</label><select id="investment_type" name="investment_type"><option value="">Sélectionnez</option><option value="debt">Dette ou obligations</option><option value="equity">Fonds propres</option><option value="pooled">Fonds ou véhicule collectif</option><option value="open">Sans préférence</option></select></div>
+      <div class="intake-field intake-wide"><label for="criteria">Quels secteurs ou marchés vous intéressent ? Indiquez vos priorités d’impact ou précisez si vous êtes ouvert aux suggestions.</label><textarea id="criteria" name="criteria" required rows="3" maxlength="600"></textarea></div>
     </div>
     <p id="intake-privacy">Nous utiliserons vos réponses pour examiner votre demande et vous recontacter.</p>
     <button type="submit" class="btn btn-glow" disabled>Envoyer mes critères</button>
