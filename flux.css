@@ -532,3 +532,10 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
   .fc-node{top:5px}
   .fc-illus-grid{grid-template-columns:1fr;gap:22px}
 }
+
+/* For development partners section — photo caption + shared tweaks */
+.fc-photo{filter:saturate(0.82) contrast(1.02) brightness(0.97)}
+.fc-intro-sub{margin-bottom:18px}
+.fc-photo-wrap{display:flex;flex-direction:column;gap:11px}
+.fc-photo-wrap .fc-photo{width:100%}
+.fc-cap{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted)}
