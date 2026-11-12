@@ -187,3 +187,29 @@
   width: 10px;
   height: 10px;
 }
+
+.audiences-page #diaspora > .fc-intro {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.audiences-page #diaspora > .fc-intro .blurb {
+  max-width: 65ch;
+}
+
+.mal-intro {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 4vw, 48px);
+  align-items: center;
+}
+
+.mal-intro .fc-photo {
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+}
+
+@media (max-width: 800px) {
+  .mal-intro {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
