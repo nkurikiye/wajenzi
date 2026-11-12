@@ -387,3 +387,51 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
   .step .num{width:44px;height:44px;font-size:18px;}
   .foot-top{grid-template-columns:1fr 1fr;}
 }
+
+/* ========================================================
+   PHOTOGRAPHY — image slots (added). Drop files in /img.
+   A .photo element shows its --img background cover-fit; if
+   the file is missing, the designed gradient below still
+   renders, so a slot never looks broken.
+   ======================================================== */
+.photo{position:relative;overflow:hidden;background-color:var(--bg-2);
+  background-image:var(--img,none);background-size:cover;background-position:center;isolation:isolate;}
+.photo::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(120% 95% at 82% 8%,rgba(226,39,111,0.30),transparent 58%),
+             linear-gradient(155deg,rgba(63,109,240,0.16),transparent 50%),
+             linear-gradient(0deg,rgba(10,17,36,0.55),rgba(10,17,36,0.12));}
+
+/* Homepage photographic band */
+.photo-band{position:relative;overflow:hidden;padding:116px 0;
+  border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);}
+.photo-band .photo-bg{position:absolute;inset:0;z-index:0;}
+.photo-band .photo-bg::before{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(10,17,36,0.93) 0%,rgba(10,17,36,0.74) 44%,rgba(10,17,36,0.42) 100%);}
+.photo-band .wrap{position:relative;z-index:2;}
+.pb-inner{max-width:620px;}
+.pb-inner h2{font-size:clamp(30px,4vw,50px);line-height:1.08;letter-spacing:-0.02em;font-weight:600;margin:18px 0 16px;}
+.pb-inner p{font-size:17px;color:#C4CEDD;}
+
+/* CTA background photo (home) */
+.cta .cta-photo{position:absolute;inset:0;z-index:0;opacity:0.45;}
+.cta .cta-photo::before{content:"";position:absolute;inset:0;z-index:2;
+  background:radial-gradient(62% 62% at 50% 50%,transparent,rgba(10,17,36,0.9));}
+
+/* Audience photo per row */
+.aud-photo{aspect-ratio:16/10;border-radius:var(--card-radius);border:1px solid var(--panel-bd);margin-bottom:26px;}
+
+/* Insights: article feature image + list thumbnails */
+.article-feat{aspect-ratio:21/9;border-radius:calc(var(--card-radius) + 2px);border:1px solid var(--panel-bd);margin:10px 0 2px;}
+.ins-thumb{aspect-ratio:16/9;border-radius:12px;border:1px solid var(--panel-bd);margin-bottom:22px;}
+
+/* Team: photo-forward member cards */
+.team-grid{max-width:900px;}
+.member{padding:0;overflow:hidden;}
+.member .ph{width:100%;aspect-ratio:4/5;}
+.member .m-body{padding:26px 30px 32px;}
+
+@media(max-width:720px){
+  .photo-band{padding:82px 0;}
+  .photo-band .photo-bg::before{background:linear-gradient(0deg,rgba(10,17,36,0.93),rgba(10,17,36,0.58));}
+  .member .ph{aspect-ratio:4/3;}
+}
