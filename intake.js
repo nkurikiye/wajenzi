@@ -1,6 +1,10 @@
+// Form backend: Formspree (forms "Company enquiry" / "Investor enquiry").
+// Notifications currently go to the account email; to send them to
+// info@wajenzi.fund, add it under Formspree → Account → Linked Emails (verify
+// once), then set it as each form's recipient.
 const intakeEndpoints = {
-  company: '',
-  investor: '',
+  company: 'https://formspree.io/f/xljbddwj',
+  investor: 'https://formspree.io/f/maeonnlw',
 };
 
 const intake = document.querySelector('[data-intake]');
