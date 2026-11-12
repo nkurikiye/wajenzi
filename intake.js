@@ -1,6 +1,10 @@
+// Form backend: FormSubmit (no account needed — delivers to info@wajenzi.fund).
+// First real submission triggers a one-time activation email to that inbox; click
+// the link to turn delivery on. To switch to Formspree later, replace these with
+// your https://formspree.io/f/<id> URLs.
 const intakeEndpoints = {
-  company: '',
-  investor: '',
+  company: 'https://formsubmit.co/ajax/info@wajenzi.fund',
+  investor: 'https://formsubmit.co/ajax/info@wajenzi.fund',
 };
 
 const intake = document.querySelector('[data-intake]');
