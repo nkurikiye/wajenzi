@@ -14,6 +14,7 @@ exact name and it appears automatically — no code changes needed.
 | `diaspora.jpg` | Who we serve — For the Diaspora | 16:10, ~1200×750 | Diaspora / people / connection to home. |
 | `insight-euromtf.jpg` | Insights card + article header | 16:9, ~1600×900 | Luxembourg / finance / markets. |
 | `insight-diaspora.jpg` | Insights card + article header | 16:9, ~1600×900 | Diaspora / people / connection. |
+| `insight-thesis.jpg` | Insights card + article header | 16:9, ~1600×900 | A bridge / connection / two shores — the core thesis piece. |
 | `member-3.jpg` | About — extra team member (optional) | portrait 4:5, ~800×1000 | Match the framing of the existing headshots. |
 
 Existing headshots `alain-web.jpg` and `arielle-web.jpg` live at the repo root (not in /img) and are already wired in.
