@@ -553,3 +553,8 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
   font-size: 13px;
 }
 .article-photo figcaption a { text-decoration: underline; }
+
+/* Article feature-image caption / credit */
+.feat-cap{font-size:12.5px;color:var(--muted);font-weight:300;line-height:1.5;margin:12px 2px 0}
+.feat-cap a{color:var(--magenta-2);text-decoration:none;border-bottom:1px solid rgba(255,92,151,0.32)}
+.feat-cap a:hover{border-bottom-color:var(--magenta-2)}
