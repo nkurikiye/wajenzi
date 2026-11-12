@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wajenzi — Nos publics</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 278 278'%3E%3Cg fill='%23E2276F'%3E%3Cpath d='M139.06,129.3,151.37,117a74,74,0,0,0,0-104.68L139.06,0,126.75,12.31a74,74,0,0,0,0,104.68Z'/%3E%3Cpath d='M139.06,278.12l12.31-12.31a74,74,0,0,0,0-104.68l-12.31-12.31-12.31,12.31a74,74,0,0,0,0,104.68Z'/%3E%3Cpath d='M148.82,139.06l12.31,12.31a74,74,0,0,0,104.68,0l12.31-12.31-12.31-12.31a74,74,0,0,0-104.68,0Z'/%3E%3Cpath d='M0,139.06l12.31,12.31a74,74,0,0,0,104.68,0l12.31-12.31L117,126.75a74,74,0,0,0-104.68,0Z'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../flux.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" aria-label="Accueil Wajenzi"><img class="logo-svg" src="../logo.svg" alt="Wajenzi" /></a>
+    <nav class="nav-links">
+      <a href="model.html">Comment ça marche</a>
+      <a href="process.html">Le parcours</a>
+      <a href="audiences.html" class="active">Nos publics</a>
+      <a href="insights.html">Perspectives</a>
+      <a href="about.html">À propos</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../audiences.html" class="lang">EN</a>
+      <a href="about.html#contact" class="btn btn-glow">Prendre rendez-vous</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <canvas id="flow-canvas"></canvas>
+  <div class="glow" style="width:480px;height:480px;background:var(--magenta);right:-140px;top:-160px;opacity:0.4;"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Wajenzi</a><span class="sep">/</span> Nos publics</div>
+    <h1>Une plateforme, <span class="grad-text">deux côtés</span> du marché.</h1>
+    <p class="lead">Que vous bâtissiez une entreprise ou déployiez du capital, Wajenzi est l'intermédiaire de confiance entre la croissance de l'Afrique et les investisseurs du monde — avec des partenaires de développement qui aident à mobiliser le capital privé.</p>
+  </div>
+</section>
+
+<!-- DETAIL ROWS -->
+<section class="block">
+  <div class="wrap">
+
+    <div class="aud-detail reveal" id="issuers">
+      <div>
+        <div class="aud-photo photo" style="--img:url('../img/issuers.jpg')"></div>
+        <div class="tagn">[ 01 ]</div>
+        <h3>Pour les émetteurs</h3>
+        <div class="sub">PME africaines levant 1 à 10 M€</div>
+        <p class="blurb">Des entreprises rentables, en croissance, qui ont dépassé les banques locales mais ne sont pas prêtes pour une cotation publique complète.</p>
+      </div>
+      <div class="panel">
+        <h4>Ce que vous obtenez</h4>
+        <ul>
+          <li>Devenir prêt à l'investissement avec un accompagnement de structuration concret</li>
+          <li>Accéder à des capitaux de dette et de fonds propres au-delà des banques locales</li>
+          <li>Coter sur une place européenne crédible sans la lourdeur d'une IPO</li>
+          <li>Atteindre des investisseurs de la diaspora, institutionnels et de développement</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aud-detail reveal" id="investors">
+      <div>
+        <div class="aud-photo photo" style="--img:url('../img/investors.jpg')"></div>
+        <div class="tagn">[ 02 ]</div>
+        <h3>Pour les investisseurs</h3>
+        <div class="sub">Institutions · family offices · diaspora</div>
+        <p class="blurb">Des capitaux en quête d'une véritable exposition africaine, mais avec les protections juridiques et les structures qu'ils connaissent déjà.</p>
+      </div>
+      <div class="panel">
+        <h4>Pourquoi investir avec nous</h4>
+        <ul>
+          <li>Des opportunités africaines sélectionnées, dans des structures de qualité européenne</li>
+          <li>Des protections juridiques familières et une domiciliation luxembourgeoise</li>
+          <li>Des véhicules diversifiés, pas des titres uniques et illiquides</li>
+          <li>Un impact mesurable aux côtés du rendement financier</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aud-detail reveal" id="partners">
+      <div>
+        <div class="aud-photo photo" style="--img:url('../img/partners.jpg')"></div>
+        <div class="tagn">[ 03 ]</div>
+        <h3>Pour les partenaires de développement</h3>
+        <div class="sub">IFD · fonds à impact · fondations</div>
+        <p class="blurb">Des capitaux à mandat qui peuvent ancrer les offres et débloquer des pools bien plus larges d'investissement privé.</p>
+      </div>
+      <div class="panel">
+        <h4>Comment nous collaborons</h4>
+        <ul>
+          <li>Des rôles d'ancrage et de première perte qui mobilisent le capital privé</li>
+          <li>Alignement des mandats : emplois, genre, jeunesse, climat</li>
+          <li>Une voie intermédiée et scalable vers l'impact PME</li>
+          <li>Des données et un reporting transparents sur les résultats</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aud-detail reveal" id="diaspora">
+      <div>
+        <div class="aud-photo photo" style="--img:url('../img/diaspora.jpg')"></div>
+        <div class="tagn">[ 04 ]</div>
+        <h3>Pour la diaspora</h3>
+        <div class="sub">Africains d'Europe · investir au pays</div>
+        <p class="blurb">La diaspora africaine envoie chaque année plus de 100 Mds $ au pays — et presque rien ne devient de l'investissement structuré. Nous changeons cela.</p>
+        <a class="read-link" href="../malaika.html">Découvrir Malaika <span class="ar">&rarr;</span></a>
+      </div>
+      <div class="panel">
+        <h4>Comment ça fonctionne pour vous</h4>
+        <ul>
+          <li>Investir dans les mêmes instruments cotés dans l'UE que les institutions — un ISIN réel, une domiciliation luxembourgeoise</li>
+          <li>L'onboarding et la conformité gérés une fois, via des partenaires agréés</li>
+          <li>Un reporting transparent, pour voir où va votre capital</li>
+          <li>Une manière structurée de soutenir le pays — avec un rendement, pas seulement un transfert</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MALAIKA SUB-BRAND -->
+    <div class="malaika reveal" id="malaika">
+      <div class="mal-head">
+        <span class="mal-badge">&#9679; Malaika</span>
+        <h3>Le réseau d'investisseurs providentiels de la diaspora.</h3>
+        <p>« Malaika » signifie <em>ange</em>. C'est notre réseau de business angels de la diaspora africaine — investissant ensemble dans les entreprises que nous amenons au marché, et soutenant les fondateurs par le jugement et le mentorat, pas seulement le capital.</p>
+      </div>
+      <div class="mal-pillars">
+        <div class="mal-p"><div class="mn">Réseau</div><p>Une communauté d'anges de la diaspora qui partagent deal flow, due diligence et conviction.</p></div>
+        <div class="mal-p"><div class="mn">Investir ensemble</div><p>Soutenir une opportunité seul, ou se regrouper en syndicat — en évaluant les dossiers collectivement.</p></div>
+        <div class="mal-p"><div class="mn">Mentorer</div><p>Apporter aux fondateurs expérience, réseaux et conseils, de la part de personnes qui ont déjà bâti.</p></div>
+      </div>
+      <a class="read-link" href="../malaika.html">Découvrir Malaika <span class="ar">&rarr;</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="glow" style="width:600px;height:600px;background:var(--magenta);left:50%;top:50%;transform:translate(-50%,-50%);opacity:0.3;"></div>
+  <div class="wrap">
+    <h2 class="reveal">Trouvez votre côté du <span class="grad-text">pont.</span></h2>
+    <p class="reveal">Dites-nous si vous levez des fonds, investissez ou souhaitez devenir partenaire — nous nous occupons du reste.</p>
+    <div class="hero-cta reveal">
+      <a href="mailto:info@wajenzi.fund?subject=Demande%20émetteur" class="btn btn-glow">Je veux lever des fonds</a>
+      <a href="mailto:info@wajenzi.fund?subject=Demande%20investisseur" class="btn btn-ghost">Je veux investir</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img class="logo-svg" src="../logo.svg" alt="Wajenzi" style="height:28px" />
+        <p class="foot-about">Société de conseil en finance d'entreprise fondée par des Africains, dont le siège est au Luxembourg, reliant les PME du continent aux capitaux mondiaux via des véhicules de confiance domiciliés dans l'UE.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul><li><a href="model.html">Comment ça marche</a></li><li><a href="process.html">Le parcours</a></li><li><a href="audiences.html">Nos publics</a></li><li><a href="insights.html">Perspectives</a></li><li><a href="about.html">À propos</a></li></ul>
+      </div>
+      <div>
+        <h5>Publics</h5>
+        <ul><li><a href="audiences.html#issuers">Émetteurs</a></li><li><a href="audiences.html#investors">Investisseurs</a></li><li><a href="audiences.html#partners">Partenaires de développement</a></li><li><a href="audiences.html#diaspora">Diaspora</a></li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul><li><a href="mailto:info@wajenzi.fund">info@wajenzi.fund</a></li><li>LHoFT · 9 rue du Laboratoire</li><li>L-1911 Luxembourg</li></ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p><strong>Important :</strong> Wajenzi fournit des services de conseil et d'arrangement en finance d'entreprise. Wajenzi n'est pas une entreprise d'investissement agréée ; le placement et la distribution de titres sont réalisés en partenariat avec des intermédiaires dûment agréés.</p>
+      <p>Rien sur ce site ne constitue un conseil en investissement, juridique, fiscal ou financier, ni une offre ou une sollicitation d'achat ou de vente de titres. L'investissement dans des titres privés et de marchés frontières comporte des risques importants, y compris la perte éventuelle du capital, l'illiquidité et le risque de change. Les investisseurs potentiels doivent solliciter un avis professionnel indépendant.</p>
+      <p>© 2026 Wajenzi. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../flux.js"></script>
+</body>
+</html>

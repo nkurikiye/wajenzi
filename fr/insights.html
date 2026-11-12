@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wajenzi — Perspectives</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 278 278'%3E%3Cg fill='%23E2276F'%3E%3Cpath d='M139.06,129.3,151.37,117a74,74,0,0,0,0-104.68L139.06,0,126.75,12.31a74,74,0,0,0,0,104.68Z'/%3E%3Cpath d='M139.06,278.12l12.31-12.31a74,74,0,0,0,0-104.68l-12.31-12.31-12.31,12.31a74,74,0,0,0,0,104.68Z'/%3E%3Cpath d='M148.82,139.06l12.31,12.31a74,74,0,0,0,104.68,0l12.31-12.31-12.31-12.31a74,74,0,0,0-104.68,0Z'/%3E%3Cpath d='M0,139.06l12.31,12.31a74,74,0,0,0,104.68,0l12.31-12.31L117,126.75a74,74,0,0,0-104.68,0Z'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../flux.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" aria-label="Accueil Wajenzi"><img class="logo-svg" src="../logo.svg" alt="Wajenzi" /></a>
+    <nav class="nav-links">
+      <a href="model.html">Comment ça marche</a>
+      <a href="process.html">Le parcours</a>
+      <a href="audiences.html">Nos publics</a>
+      <a href="insights.html" class="active">Perspectives</a>
+      <a href="about.html">À propos</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../insights.html" class="lang">EN</a>
+      <a href="about.html#contact" class="btn btn-glow">Prendre rendez-vous</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <canvas id="flow-canvas"></canvas>
+  <div class="glow" style="width:480px;height:480px;background:var(--magenta);right:-140px;top:-160px;opacity:0.4;"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Wajenzi</a><span class="sep">/</span> Perspectives</div>
+    <h1>Notes sur la construction du <span class="grad-text">pont.</span></h1>
+    <p class="lead">Des analyses sans détour sur le fonctionnement réel des capitaux transfrontaliers pour les PME africaines — les places, les structures, et les écarts que nous sommes faits pour combler.</p>
+    <p class="hero-note">// articles actuellement disponibles en anglais</p>
+  </div>
+</section>
+
+<!-- INSIGHTS LIST -->
+<section class="block tight">
+  <div class="wrap">
+    <div class="ins-grid">
+
+      <a class="ins-card reveal" href="../why-the-bridge-doesnt-exist.html">
+        <div class="ins-thumb photo" style="--img:url('../img/insight-thesis.jpg')"></div>
+        <span class="k">Thèse · 6 min</span>
+        <h3>Le capital existe. Les entreprises existent. Le pont, non.</h3>
+        <p>L'écart que des milliers de milliards de capitaux et des décennies de bonnes intentions n'ont pas comblé — et pourquoi il est structurel, non un manque d'argent ou de mérite.</p>
+        <span class="go">Lire (EN) <span class="ar">&rarr;</span></span>
+      </a>
+
+      <a class="ins-card reveal" href="../euro-mtf-african-smes.html">
+        <div class="ins-thumb photo" style="--img:url('../img/insight-euromtf.jpg')"></div>
+        <span class="k">Guide émetteur · 8 min</span>
+        <h3>Pourquoi l'Euro MTF convient aux PME africaines</h3>
+        <p>L'échelon entre un prêt bancaire local et une IPO complète — comptabilité du pays d'origine, voie sans prospectus et admission en 48 heures environ.</p>
+        <span class="go">Lire (EN) <span class="ar">&rarr;</span></span>
+      </a>
+
+      <a class="ins-card reveal" href="../how-diaspora-capital-is-structured.html">
+        <div class="ins-thumb photo" style="--img:url('../img/insight-diaspora.jpg')"></div>
+        <span class="k">Analyse · 7 min</span>
+        <h3>Comment structurer le capital de la diaspora</h3>
+        <p>La diaspora africaine envoie chaque année plus de 100 Mds $ au pays, et presque rien ne devient de l'investissement structuré. Le problème n'est pas la volonté — c'est l'infrastructure.</p>
+        <span class="go">Lire (EN) <span class="ar">&rarr;</span></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="glow" style="width:600px;height:600px;background:var(--magenta);left:50%;top:50%;transform:translate(-50%,-50%);opacity:0.3;"></div>
+  <div class="wrap">
+    <h2 class="reveal">Construisons le <span class="grad-text">pont.</span></h2>
+    <p class="reveal">Que vous soyez un fondateur prêt à lever des fonds ou un investisseur en quête d'une exposition africaine porteuse de sens, nous aimerions vous parler.</p>
+    <div class="hero-cta reveal">
+      <a href="mailto:info@wajenzi.fund?subject=Demande%20émetteur" class="btn btn-glow">Je veux lever des fonds</a>
+      <a href="mailto:info@wajenzi.fund?subject=Demande%20investisseur" class="btn btn-ghost">Je veux investir</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img class="logo-svg" src="../logo.svg" alt="Wajenzi" style="height:28px" />
+        <p class="foot-about">Société de conseil en finance d'entreprise fondée par des Africains, dont le siège est au Luxembourg, reliant les PME du continent aux capitaux mondiaux via des véhicules de confiance domiciliés dans l'UE.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul><li><a href="model.html">Comment ça marche</a></li><li><a href="process.html">Le parcours</a></li><li><a href="audiences.html">Nos publics</a></li><li><a href="insights.html">Perspectives</a></li><li><a href="about.html">À propos</a></li></ul>
+      </div>
+      <div>
+        <h5>Publics</h5>
+        <ul><li><a href="audiences.html#issuers">Émetteurs</a></li><li><a href="audiences.html#investors">Investisseurs</a></li><li><a href="audiences.html#partners">Partenaires de développement</a></li><li><a href="audiences.html#diaspora">Diaspora</a></li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul><li><a href="mailto:info@wajenzi.fund">info@wajenzi.fund</a></li><li>LHoFT · 9 rue du Laboratoire</li><li>L-1911 Luxembourg</li></ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p><strong>Important :</strong> Wajenzi fournit des services de conseil et d'arrangement en finance d'entreprise. Wajenzi n'est pas une entreprise d'investissement agréée ; le placement et la distribution de titres sont réalisés en partenariat avec des intermédiaires dûment agréés.</p>
+      <p>Rien sur ce site ne constitue un conseil en investissement, juridique, fiscal ou financier, ni une offre ou une sollicitation d'achat ou de vente de titres. L'investissement dans des titres privés et de marchés frontières comporte des risques importants, y compris la perte éventuelle du capital, l'illiquidité et le risque de change. Les investisseurs potentiels doivent solliciter un avis professionnel indépendant.</p>
+      <p>© 2026 Wajenzi. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../flux.js"></script>
+</body>
+</html>
