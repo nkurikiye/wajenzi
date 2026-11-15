@@ -575,3 +575,25 @@ table.cmp thead th.mtf-h{background:var(--magenta);color:#fff;}
 
 /* Opening intro paragraph (model.html / about.html) */
 .intro-para{font-size:clamp(17px,2vw,21px);line-height:1.6;color:#C6D0DF;font-weight:300;max-width:880px;margin:0}
+
+/* ===== Masterclass page ===== */
+.mc-facts{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--panel-bd);border:1px solid var(--panel-bd);border-radius:var(--card-radius);overflow:hidden;}
+.mc-fact{background:var(--panel);padding:22px 22px;backdrop-filter:blur(10px);display:flex;flex-direction:column;gap:6px;}
+.mc-fact .k{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);}
+.mc-fact strong{font-family:var(--display-font);font-size:20px;font-weight:600;line-height:1.2;}
+.mc-fact .s{font-size:13.5px;color:var(--magenta-2);}
+.mc-note{font-size:15px;color:var(--muted);margin-top:26px;max-width:720px;}
+.mc-days{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;}
+.mc-day{background:var(--panel);border:1px solid var(--panel-bd);border-radius:var(--card-radius);padding:26px 28px;backdrop-filter:blur(10px);}
+.mc-day .when{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:0.08em;color:var(--cyan);}
+.mc-day h3{font-family:var(--display-font);font-size:24px;font-weight:600;margin:10px 0 8px;}
+.mc-day p{font-size:15.5px;color:var(--muted);}
+.mc-host{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:start;max-width:960px;}
+.mc-host .ph{width:100%;aspect-ratio:4/5;border-radius:var(--card-radius);}
+.mc-host h2{font-size:clamp(30px,3.6vw,44px);letter-spacing:-0.02em;font-weight:600;margin:16px 0 18px;}
+.mc-host p{font-size:17px;color:var(--muted);margin-bottom:12px;}
+.mc-flyers{display:grid;grid-template-columns:repeat(2,minmax(0,360px));gap:24px;}
+.mc-flyers img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--panel-bd);}
+@media(max-width:900px){.mc-facts{grid-template-columns:repeat(2,1fr);}.mc-days{grid-template-columns:1fr;}.mc-host{grid-template-columns:1fr;gap:26px;}.mc-host .ph{aspect-ratio:4/3;}.mc-flyers{grid-template-columns:1fr 1fr;}}
+@media(max-width:520px){.mc-facts{grid-template-columns:1fr;}.mc-flyers{grid-template-columns:1fr;}}
+.page-hero p.mc-lead{font-size:19px;color:var(--muted);max-width:620px;margin-top:24px;}
